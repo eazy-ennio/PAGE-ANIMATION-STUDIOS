@@ -68,9 +68,20 @@
       margin-bottom: 2rem;
     }
 
-    .films-placeholder {
-      color: #888;
-      font-size: 1.2rem;
+    .film-entry {
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+
+    .film-entry h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     footer {
@@ -98,7 +109,14 @@
 
   <section id="films" class="films-section">
     <h3>Our Films</h3>
-    <p class="films-placeholder">Coming soon...</p>
+
+    <div class="film-entry">
+      <h4>Fever Dreams</h4>
+      <video controls>
+        <source src="/mnt/data/art%20project%20finished.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </section>
 
   <footer>

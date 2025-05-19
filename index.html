@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page | Animated Stories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://www.pixar.com/images/film/pixar-placeholder.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      z-index: 1;
+      font-size: 3rem;
+    }
+
+    .films-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .films-section h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .films-placeholder {
+      color: #888;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PAGE</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#films">Films</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bringing Stories to Life</h2>
+  </section>
+
+  <section id="films" class="films-section">
+    <h3>Our Films</h3>
+    <p class="films-placeholder">Coming soon...</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Page Animation Studios. All rights reserved.
+  </footer>
+</body>
+</html>
